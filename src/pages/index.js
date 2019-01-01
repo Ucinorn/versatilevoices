@@ -3,14 +3,11 @@ import Helmet from "react-helmet";
 
 import Layout from '../components/layout';
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
+import logo from '../assets/images/logo.png'
 
 class Homepage extends React.Component {
     render() {
-        const siteTitle = "Gatsby Starter - Photon";
+        const siteTitle = "Versatile Voices";
 
         return (
             <Layout>
@@ -18,91 +15,70 @@ class Homepage extends React.Component {
 
                 <section id="one" className="main style1">
                     <div className="grid-wrapper">
+											<div className="col-6">
+													<span className="image fit"><img src={logo} alt="logo" /></span>
+											</div>
                         <div className="col-6">
                             <header className="major">
-                                <h2>Lorem ipsum dolor adipiscing<br />
-                                amet dolor consequat</h2>
+                                <h1>{siteTitle}</h1>
                             </header>
-                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
-                        </div>
-                        <div className="col-6">
-                            <span className="image fit"><img src={pic01} alt="" /></span>
+                            <p>Melbourne Singing Lessons for All Ages</p>
                         </div>
                     </div>
                 </section>
 
-                <section id="two" className="main style2">
+                <section id="lessons" className="main style2">
                     <div className="grid-wrapper">
-                        <div className="col-6">
-                            <ul className="major-icons">
-                                <li><span className="icon style1 major fa-code"></span></li>
-                                <li><span className="icon style2 major fa-bolt"></span></li>
-                                <li><span className="icon style3 major fa-camera-retro"></span></li>
-                                <li><span className="icon style4 major fa-cog"></span></li>
-                                <li><span className="icon style5 major fa-desktop"></span></li>
-                                <li><span className="icon style6 major fa-calendar"></span></li>
-                            </ul>
+												<p>Versatile Voices offers one-on-one singing and vocal lessons for all ages and skill levels.</p>
+												<p>We can offer advice and exercises to improve in many areas:</p>
+		                    <div className="col-6">
+	                            <ul className="major-icons">
+	                                <li><span className="icon style1 major fa-music">Stage Prescence</span></li>
+	                                <li><span className="icon style2 major fa-music">Sight Singing</span></li>
+	                                <li><span className="icon style3 major fa-music">Music Theory</span></li>
+	                                <li><span className="icon style6 major fa-music">Audition Preparation</span></li>
+	                            </ul>
                         </div>
-                        <div className="col-6">
-                            <header className="major">
-                                <h2>Lorem ipsum dolor adipiscing<br />
-                                amet dolor consequat</h2>
-                            </header>
-                            <p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-                            <p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
-                            <p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
+		                    <div className="col-6">
+	                            <ul className="major-icons">
+																	<li><span className="icon style4 major fa-music">Voice Care</span></li>
+	                                <li><span className="icon style6 major fa-music">Breath Control</span></li>
+	                                <li><span className="icon style5 major fa-music">Songwriting and Composition</span></li>
+	                                <li><span className="icon style5 major fa-music">Improvisation</span></li>
+	                            </ul>
                         </div>
+												<p>Victoria has been offering singing tuition for many years. She has an extensive history of performance in as a vocalist and musician, in musical theatre, as part of a band and headlining solo performances.</p>
+												<p>She is currently the Coordinator of Performing Arts at a Melbourne Primary School, with a passion for teaching students of all ages.</p>
                     </div>
                 </section>
 
-                <section id="three" className="main style1 special">
+                <section id="locations" className="main style1 special">
                     <div className="grid-wrapper">
-                        <div className="col-12">
-                            <header className="major">
-                                <h2>Adipiscing amet consequat</h2>
-                            </header>
-                            <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
-                        </div>
 
-                        <div className="col-4">
-                            <span className="image fit"><img src={pic02} alt="" /></span>
-                            <h3>Magna feugiat lorem</h3>
-                            <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                            <ul className="actions">
-                                <li><a href="#" className="button">More</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-4">
-                            <span className="image fit"><img src={pic03} alt="" /></span>
-                            <h3>Magna feugiat lorem</h3>
-                            <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                            <ul className="actions">
-                                <li><a href="#" className="button">More</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-4">
-                            <span className="image fit"><img src={pic04} alt="" /></span>
-                            <h3>Magna feugiat lorem</h3>
-                            <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                            <ul className="actions">
-                                <li><a href="#" className="button">More</a></li>
-                            </ul>
-                        </div>
 
                     </div>
                 </section>
 
-                <section id="four" className="main style2 special">
-                    <div className="container">
-                        <header className="major">
-                            <h2>Ipsum feugiat consequat?</h2>
-                        </header>
-                        <p>Sed lacus nascetur ac ante amet sapien.</p>
-                        <ul className="actions uniform">
-                            <li><a href="#" className="button special">Sign Up</a></li>
-                            <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
-                    </div>
+                <section id="contact" className="main style2 special">
+								<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+    									<input type="hidden" name="bot-field" />
+									    <div className="field half first">
+									        <label htmlFor="name">Name</label>
+									        <input type="text" name="name" id="name" />
+									    </div>
+									    <div className="field half">
+									        <label htmlFor="email">Email</label>
+									        <input type="text" name="email" id="email" />
+									    </div>
+									    <div className="field">
+									        <label htmlFor="message">Message</label>
+									        <textarea name="message" id="message" rows="6"></textarea>
+									    </div>
+									    <ul className="actions">
+									        <li><input type="submit" value="Send Message" className="special" /></li>
+									        <li><input type="reset" value="Clear" /></li>
+									    </ul>
+									</form>
                 </section>
             </Layout>
         );
